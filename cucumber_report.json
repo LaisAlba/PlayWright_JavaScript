@@ -1,0 +1,417 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "contact-action;try-to-contact-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Try to contact with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 483391999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit a login page",
+            "match": {
+              "location": "step-definitions\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1714884999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I fill the login form with \"GETWINDOWS\" and \"GETWINDOWS\"",
+            "match": {
+              "location": "step-definitions\\loginStep.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1115187900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click in contact menu",
+            "match": {
+              "location": "step-definitions\\contactStep.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 777827300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "step-definitions\\loginStep.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3005967299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I fill the contact fields",
+            "match": {
+              "location": "step-definitions\\contactStep.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216443400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "step-definitions\\loginStep.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3011531800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 99834200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "contact-action",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Contact action",
+    "tags": [],
+    "uri": "features\\contact.feature"
+  },
+  {
+    "description": "  As a user\n  I want to login into application",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-action;try-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Try to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 407292299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I visit a login page",
+            "match": {
+              "location": "step-definitions\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1817311399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I fill the login form with \"GETWINDOWS\" and \"GETWINDOWS\"",
+            "match": {
+              "location": "step-definitions\\loginStep.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 737219200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click in home menu",
+            "match": {
+              "location": "step-definitions\\homeStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 531161700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I fill name and email for newsletter",
+            "match": {
+              "location": "step-definitions\\homeStep.js:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5011882399,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\AUTOMACAO\\Playwright\\Playwright\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "step-definitions\\loginStep.js:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 71356000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-action",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login action",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "practice-action;practice-test-and-click-in-login-page",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Practice test and click in login page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 367788499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit a login page",
+            "match": {
+              "location": "step-definitions\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1788842900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I fill the login form with \"GETWINDOWS\" and \"GETWINDOWS\"",
+            "match": {
+              "location": "step-definitions\\loginStep.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 753460900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click in practice menu",
+            "match": {
+              "location": "step-definitions\\practiceStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 419230199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click in test login page",
+            "match": {
+              "location": "step-definitions\\practiceStep.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193439900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "step-definitions\\loginStep.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3013011099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69316699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "practice-action;practice-test-and-click-in-test-exception",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Practice test and click in test exception",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 441738799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit a login page",
+            "match": {
+              "location": "step-definitions\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1729042299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I fill the login form with \"GETWINDOWS\" and \"GETWINDOWS\"",
+            "match": {
+              "location": "step-definitions\\loginStep.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 790593800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click in practice menu",
+            "match": {
+              "location": "step-definitions\\practiceStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 453220300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click in test exception",
+            "match": {
+              "location": "step-definitions\\practiceStep.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 396850999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "step-definitions\\loginStep.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3013742599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55851999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "practice-action",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Practice action",
+    "tags": [],
+    "uri": "features\\practice.feature"
+  }
+]
